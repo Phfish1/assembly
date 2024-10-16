@@ -42,3 +42,8 @@ List to great videoes about stack smashing AKA buffer overflows
 
 - Articles
   - [Stack canaries](https://ctf101.org/binary-exploitation/stack-canaries/) CTF101.org
+
+## Intresting concepts to dive deeper into
+
+- **Yoda notation**
+  - What is it, why is it usefull from a security point of view.
