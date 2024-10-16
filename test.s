@@ -7,10 +7,16 @@ main:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
+
+
 	mov	QWORD PTR -16[rbp], 3
 	mov	DWORD PTR -20[rbp], 4
+
+
 	movsd	xmm0, QWORD PTR .LC0[rip]
 	movsd	QWORD PTR -8[rbp], xmm0
+
+	
 	mov	eax, 0
 	pop	rbp
 	ret

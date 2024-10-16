@@ -8,6 +8,7 @@ bar:
 	push	rbp
 	mov	rbp, rsp
 	nop
+	
 	pop	rbp
 	ret
 	.size	bar, .-bar
@@ -18,11 +19,13 @@ foo:
 	push	rbp
 	mov	rbp, rsp
 	sub	rsp, 32
+
 	mov	DWORD PTR -20[rbp], 1
 	mov	DWORD PTR -16[rbp], 2
 	mov	DWORD PTR -12[rbp], 3
 	mov	DWORD PTR -8[rbp], 4
 	mov	DWORD PTR -4[rbp], 5
+	
 	mov	eax, 0
 	call	bar
 	mov	eax, 0

@@ -1,40 +1,28 @@
-	.file	"based.c"
+	.file	"missalignedStack.c"
 	.intel_syntax noprefix
 	.text
-	.globl	foo
-	.type	foo, @function
-foo:
+	.globl	leafFunction
+	.type	leafFunction, @function
+leafFunction:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
-
-	mov	DWORD PTR -4[rbp], 3
-
+	mov	QWORD PTR -16[rbp], 1
+	mov	QWORD PTR -8[rbp], 2
 	mov	eax, 0
 	pop	rbp
 	ret
-	.size	foo, .-foo
+	.size	leafFunction, .-leafFunction
 	.globl	main
 	.type	main, @function
 main:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
-
-
-	sub	rsp, 32
-
-	mov	DWORD PTR -28[rbp], 1
-	mov	DWORD PTR -24[rbp], 3
-	mov	QWORD PTR -16[rbp], 4
-	mov	QWORD PTR -8[rbp], 10
-	mov	DWORD PTR -20[rbp], 5
-
 	mov	eax, 0
-	call	foo
-
+	call	leafFunction
 	mov	eax, 0
-	leave
+	pop	rbp
 	ret
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0"

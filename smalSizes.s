@@ -7,10 +7,20 @@ main:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
+
+
+	
 	mov	BYTE PTR -1[rbp], 97
+
+
+
+
 	mov	eax, 0
 	pop	rbp
 	ret
+
+
+
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0"
 	.section	.note.GNU-stack,"",@progbits

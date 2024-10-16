@@ -15,10 +15,15 @@ calee:
 	.globl	main
 	.type	main, @function
 main:
-	endbr64
-	push	rbp
-	mov	rbp, rsp
-	sub	rsp, 16
+
+	; Sets up the function
+	;
+	endbr64				; Protects agains Control Flow Hijacking, when CET is enabled... Otherwise equals to a No Operation (NOP)
+	push	rbp							; 
+	mov	rbp, rsp					;
+	
+	
+	sub	rsp, 16						;
 	mov	QWORD PTR -8[rbp], 1
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rdi, rax
