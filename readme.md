@@ -47,3 +47,14 @@ List to great videoes about stack smashing AKA buffer overflows
 
 - **Yoda notation**
   - What is it, why is it usefull from a security point of view.
+
+## LORE
+
+I have noticed that some concepts in computer science have lore dating long back
+
+- Canaries
+
+  - A bird which miners use as a "bad gass" detector
+
+- Endian
+  - A word from the book about a king and his eggs...
