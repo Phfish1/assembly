@@ -28,3 +28,17 @@ Bellow is how to set up a Stack Frame:
     pop rbp                 ; Both these lines are equivilent to the LEAVE instruction
     ret
 ```
+
+## Stack smashing
+
+List to great videoes about stack smashing AKA buffer overflows
+
+- Videos
+
+  - [Stack canaries](https://www.youtube.com/watch?v=z6gdQt8mjn4) Low Level Learning
+  - [Buffer overflow](https://www.youtube.com/watch?v=qpyRz5lkRjE) Low level Learning
+  - [Buffer Overflow](https://www.youtube.com/watch?v=1S0aBV-Waeo) Computerphile
+    Note the demonstration in this video is using 32Bit architecture AND the GDB debugger today looks diffrent
+
+- Articles
+  - [Stack canaries](https://ctf101.org/binary-exploitation/stack-canaries/) CTF101.org
