@@ -42,6 +42,7 @@ List to great videoes about stack smashing AKA buffer overflows
 
 - Articles
   - [Stack canaries](https://ctf101.org/binary-exploitation/stack-canaries/) CTF101.org
+  - [Stack Smashing Protections](https://heimdalsecurity.com/blog/stack-smashing/) Heimdal
 
 ## Intresting concepts to dive deeper into
 
