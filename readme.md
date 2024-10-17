@@ -4,6 +4,34 @@ In this repo i test assembly.
 Main branch is dedicated to compiling C code to assembly, and walking trough its execution.
 Finished and partially finished descriptions of assembly files generated from C code lies in the `/Docs` Directory
 
+## Things to learn
+
+- How are local variables stored on the stack.
+
+  - A buffer f.eks
+
+- How does stack overflows work
+
+- How does a buffer overflow work, stack smashing
+
+- Stack canaries, what are they and how do they work
+
+  - Ways to bypass stack canaries
+    - Incremental solving (Guessing)
+    - Stack leaking
+
+- What is stack leaking
+
+- Floating point Registers and arithmetics
+
+  - XMM, SSE, SIMD
+
+- Wierd datatypes
+  - \_Float128
+  - SCALA vs Vector datatypes
+
+## Info
+
 The `.s` assembly files are compiled using:
 
 ```zsh
