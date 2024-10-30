@@ -78,6 +78,23 @@ List to great videoes about stack smashing AKA buffer overflows
   - [Stack canaries](https://ctf101.org/binary-exploitation/stack-canaries/) CTF101.org
   - [Stack Smashing Protections](https://heimdalsecurity.com/blog/stack-smashing/) Heimdal
 
+## Concepts
+
+- **PLT** (Procedure Linking Table)
+
+  ```asm
+    call printf@PLT
+  ```
+
+- **Global Offset Table**
+
+  ```asm
+    call __x86.get_pc_thunk.bx
+    add ebx, OFFSET FLAT:_GLOBAL_OFFSET_TABLE_
+
+    lea eax, .LC2@GOTOFF[ebx]
+  ```
+
 ## Intresting concepts to dive deeper into
 
 - **Yoda notation**
