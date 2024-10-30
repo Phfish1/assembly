@@ -50,10 +50,12 @@ Bellow is how to set up a Stack Frame:
 
 ```asm
   ; Initial setup
-    nop
-    push rbp
-    mov rbp, rsp
+    endbr64                 ; Placed by compilers for Control Flow Security
+    push rbp                ; Stores Caller's RBP
+    mov rbp, rsp            ; Creates new stack frame
 
+    ; Only needed if function calls other functions:
+    sub rbp, 64             ; Allocates space on stack for local variables
 
 
 
