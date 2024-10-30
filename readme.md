@@ -83,16 +83,16 @@ List to great videoes about stack smashing AKA buffer overflows
 - **PLT** (Procedure Linking Table)
 
   ```asm
-    call printf@PLT
+  call printf@PLT
   ```
 
 - **Global Offset Table**
 
   ```asm
-    call __x86.get_pc_thunk.bx
-    add ebx, OFFSET FLAT:_GLOBAL_OFFSET_TABLE_
+  call __x86.get_pc_thunk.bx
+  add ebx, OFFSET FLAT:_GLOBAL_OFFSET_TABLE_
 
-    lea eax, .LC2@GOTOFF[ebx]
+  lea eax, .LC2@GOTOFF[ebx]
   ```
 
 ## Intresting concepts to dive deeper into
