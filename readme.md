@@ -49,7 +49,7 @@ A real life example of the Linux **System V** ABI calling conventions are layed 
 Bellow is how to set up a Stack Frame:
 
 ```asm
-    ; Initial setup
+  ; Initial setup
     nop
     push rbp
     mov rbp, rsp
@@ -57,7 +57,7 @@ Bellow is how to set up a Stack Frame:
 
 
 
-    ; Does not TECHNICALLY need to restore Stack Pointer (RSP) Because it was never modified
+  ; Does not TECHNICALLY need to restore Stack Pointer (RSP) Because it was never modified
     mov rsp, rbp            ; But for good practice do it anyway
     pop rbp                 ; Both these lines are equivilent to the LEAVE instruction
     ret
