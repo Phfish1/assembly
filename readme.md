@@ -35,7 +35,13 @@ Finished and partially finished descriptions of assembly files generated from C 
 The `.s` assembly files are compiled using:
 
 ```zsh
-gcc -S -masm=intel -fno-asynchronous-unwind-tables SOURCE -o OUTPUT
+gcc -S -masm=intel -fno-asynchronous-unwind-tables SOURCE.c -o OUTPUT.s
+```
+
+Or optionally to disable Stack Canaries:
+
+```zsh
+gcc -S -masm=intel -fno-asynchronous-unwind-tables -fno-stack-protector SOUREC.c -o OUTPUT.s
 ```
 
 A real life example of the Linux **System V** ABI calling conventions are layed out in `/Docs/callingConventions.s`
