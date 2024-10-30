@@ -54,7 +54,7 @@ Bellow is how to set up a Stack Frame:
     push rbp                ; Stores Caller's RBP
     mov rbp, rsp            ; Creates new stack frame
 
-    ; Only needed if function calls other functions:
+  ; Only needed if function calls other functions:
     sub rbp, 64             ; Allocates space on stack for local variables
 
 
