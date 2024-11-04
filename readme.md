@@ -97,6 +97,18 @@ List to great videoes about stack smashing AKA buffer overflows
   lea eax, .LC2@GOTOFF[ebx]
   ```
 
+- **Use after Free**
+
+- **Return oriented programming**
+
+- **Static VS dynamic linking of Object files**
+
+- **Dynamic Linker**
+
+- **Stripped vs Unstripped ELF files**
+
+- **ELF (Executable and Linkeble Format)**
+
 ## Intresting concepts to dive deeper into
 
 - **Yoda notation**
